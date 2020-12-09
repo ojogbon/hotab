@@ -97,11 +97,11 @@ app.use("/api/v1", licenseRoute);
 
 app.use("/api/v1", commentRoute);
 
-mongoose
-  .connect("mongodb://127.0.0.1:27017/hotlab", { useNewUrlParser: true })
-  .then(() => {
-    console.log("Database connection successfull");
-  });
+// mongoose
+//   .connect("mongodb://127.0.0.1:27017/hotlab", { useNewUrlParser: true })
+//   .then(() => {
+//     console.log("Database connection successfull");
+//   });
 
 app.listen(process.env.PORT || 3000, () => {
   console.log('listening on'+"app started on port 3000");
