@@ -32,13 +32,13 @@ app.set("view engine", "ejs");
 app.set("views", "views");
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public_save")));
 // app.use(express.static(path.join(__dirname, "public", "sb-admin")));
 
 // create the storage location for multer
 const multerstorage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "public/assest/img");
+    cb(null, "public_save/assest/img");
   },
   filename: (req, file, cb) => {
     const ext = file.mimetype.split("/")[1];
