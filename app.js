@@ -38,7 +38,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // create the storage location for multer
 const multerstorage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "public/assest/home/img");
+    cb(null, "public/assest/img");
   },
   filename: (req, file, cb) => {
     const ext = file.mimetype.split("/")[1];
