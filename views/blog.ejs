@@ -1,336 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Hotlab - Blog</title>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <img style="width: 6em;" src="img/Logo.png" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+<html class="htmle" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Hotab | Blog</title>
+  <link rel="shortcut icon" type="image/jpg" href="./assest/img/fav.png"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="./assest/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="./assest/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="./assest/css/blog.css" rel="stylesheet">
+</head>
+
+<body class="what">
+
+    <!-- move to top button -->
+    <a class="topbtn z-depth-2" id="myBtn" onclick="topFunction()" title="Go to top"><i class="fas fa-arrow-up"></i></a>
+
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg white navbar-light fixed-top">
+    <div class="container">
+           <!-- Navbar brand -->
+           <a class="navbar-brand font-weight-bold black-text fadeInDown animated slow" href="index.html"><img style="width: 10em;" src="./assest/img/logo2.png"  alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+          aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+          <!-- Links -->
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item pr-3  fadeInDown animated slow">
+              <a class="nav-link black-text whatd font-weight-bold" href="/">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About Us</a>
+            <li class="nav-item pr-3  fadeInDown animated slow">
+              <a class="nav-link black-text whatd font-weight-bold" href="aboutus.html">About Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Our Services</a>
+            <li class="nav-item pr-3  fadeInDown animated slow">
+              <a class="nav-link black-text  whatd  font-weight-bold" href="services.html">Our Service</a>
             </li>
-
-            <li class="nav-item active">
-              <a class="nav-link" href="blog.html">Blog</a>
+            <li class="nav-item pr-3  fadeInDown animated slow">
+              <a class="nav-link black-text  whatd  font-weight-bold" href="blog.html">Blog</a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="index.html?#contactus">Contact Us</a>
+            <li class="nav-item  fadeInDown animated slow">
+              <a class="nav-link black-text  whatd  font-weight-bold" href="/contactus.html">Contact</a>
+            </li>
+            <li class="nav-item  fadeInDown animated slow">
+              <a class="nav-link black-text  whatd  font-weight-bold" href="/product.html">Products</a>
             </li>
           </ul>
+          <!-- Links -->
+         
         </div>
-      </nav>
-      <section class="blog-banner">
-        <div class="card" style="width: 100%;">
-          <img src="./img/Image.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Importance of branding to business</h5>
-            <p class="card-text">
-              Businesses can be for-profit entities or they can be organizations
-              that operate to fulfill a charitable mission or further a social
-              cause.
-            </p>
-            <a href="#" class="btn btn-link"
-              >Read more
-              <svg
-                width="24"
-                height="12"
-                viewBox="0 0 24 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.937483 5.06256H20.7918L17.5028 1.78957C17.1358 1.42432 17.1344 0.830744 17.4997 0.46376C17.8649 0.0967293 18.4586 0.0953703 18.8255 0.460573L23.7242 5.33556C23.7245 5.33585 23.7247 5.33617 23.725 5.33645C24.0911 5.7017 24.0922 6.2972 23.7251 6.66367C23.7248 6.66395 23.7245 6.66428 23.7243 6.66456L18.8256 11.5396C18.4587 11.9047 17.8651 11.9034 17.4998 11.5364C17.1345 11.1694 17.1359 10.5758 17.5029 10.2106L20.7918 6.93756H0.937483C0.419703 6.93756 -1.71661e-05 6.51784 -1.71661e-05 6.00006C-1.71661e-05 5.48228 0.419703 5.06256 0.937483 5.06256Z"
-                  fill="#2F80ED"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="blog-more">
-        <div class="row">
-          <div class="blog col-lg-4 col-md-12 col-sm-12">
-            <div class="card" style="width: 100%;">
-              <img src="./img/Image (1).png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Title tip</h5>
-                <p class="card-text">
-                  Businesses can be for-profit entities or they can be
-                  organizations that operate to fulfill a charitable mission or
-                  further a social cause.
-                </p>
-                <a href="#" class="btn btn-link"
-                  >Read more
-                  <svg
-                    width="24"
-                    height="12"
-                    viewBox="0 0 24 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.937483 5.06256H20.7918L17.5028 1.78957C17.1358 1.42432 17.1344 0.830744 17.4997 0.46376C17.8649 0.0967293 18.4586 0.0953703 18.8255 0.460573L23.7242 5.33556C23.7245 5.33585 23.7247 5.33617 23.725 5.33645C24.0911 5.7017 24.0922 6.2972 23.7251 6.66367C23.7248 6.66395 23.7245 6.66428 23.7243 6.66456L18.8256 11.5396C18.4587 11.9047 17.8651 11.9034 17.4998 11.5364C17.1345 11.1694 17.1359 10.5758 17.5029 10.2106L20.7918 6.93756H0.937483C0.419703 6.93756 -1.71661e-05 6.51784 -1.71661e-05 6.00006C-1.71661e-05 5.48228 0.419703 5.06256 0.937483 5.06256Z"
-                      fill="#2F80ED"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="blog col-lg-4 col-md-12 col-sm-12">
-            <div class="card" style="width: 100%;">
-              <img src="./img/Image (2).png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Importance of branding to business</h5>
-                <p class="card-text">
-                  Businesses can be for-profit entities or they can be
-                  organizations that operate to fulfill a charitable mission or
-                  further a social cause.
-                </p>
-                <a href="#" class="btn btn-link"
-                  >Read more
-                  <svg
-                    width="24"
-                    height="12"
-                    viewBox="0 0 24 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.937483 5.06256H20.7918L17.5028 1.78957C17.1358 1.42432 17.1344 0.830744 17.4997 0.46376C17.8649 0.0967293 18.4586 0.0953703 18.8255 0.460573L23.7242 5.33556C23.7245 5.33585 23.7247 5.33617 23.725 5.33645C24.0911 5.7017 24.0922 6.2972 23.7251 6.66367C23.7248 6.66395 23.7245 6.66428 23.7243 6.66456L18.8256 11.5396C18.4587 11.9047 17.8651 11.9034 17.4998 11.5364C17.1345 11.1694 17.1359 10.5758 17.5029 10.2106L20.7918 6.93756H0.937483C0.419703 6.93756 -1.71661e-05 6.51784 -1.71661e-05 6.00006C-1.71661e-05 5.48228 0.419703 5.06256 0.937483 5.06256Z"
-                      fill="#2F80ED"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="blog col-lg-4 col-md-12 col-sm-12">
-            <div class="card" style="width: 100%;">
-              <img src="./img/Image (3).png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Importance of branding to business</h5>
-                <p class="card-text">
-                  Businesses can be for-profit entities or they can be
-                  organizations that operate to fulfill a charitable mission or
-                  further a social cause.
-                </p>
-                <a href="#" class="btn btn-link"
-                  >Read more
-                  <svg
-                    width="24"
-                    height="12"
-                    viewBox="0 0 24 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.937483 5.06256H20.7918L17.5028 1.78957C17.1358 1.42432 17.1344 0.830744 17.4997 0.46376C17.8649 0.0967293 18.4586 0.0953703 18.8255 0.460573L23.7242 5.33556C23.7245 5.33585 23.7247 5.33617 23.725 5.33645C24.0911 5.7017 24.0922 6.2972 23.7251 6.66367C23.7248 6.66395 23.7245 6.66428 23.7243 6.66456L18.8256 11.5396C18.4587 11.9047 17.8651 11.9034 17.4998 11.5364C17.1345 11.1694 17.1359 10.5758 17.5029 10.2106L20.7918 6.93756H0.937483C0.419703 6.93756 -1.71661e-05 6.51784 -1.71661e-05 6.00006C-1.71661e-05 5.48228 0.419703 5.06256 0.937483 5.06256Z"
-                      fill="#2F80ED"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="btn-"></div>
-        <button type="button" class="btn btn-primary btn-lg btn-view">
-          View All
-          <svg
-            width="24"
-            height="12"
-            viewBox="0 0 24 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.937483 5.06256H20.7918L17.5028 1.78957C17.1358 1.42432 17.1344 0.830744 17.4997 0.46376C17.8649 0.0967293 18.4586 0.0953703 18.8255 0.460573L23.7242 5.33556C23.7245 5.33585 23.7247 5.33617 23.725 5.33645C24.0911 5.7017 24.0922 6.2972 23.7251 6.66367C23.7248 6.66395 23.7245 6.66428 23.7243 6.66456L18.8256 11.5396C18.4587 11.9047 17.8651 11.9034 17.4998 11.5364C17.1345 11.1694 17.1359 10.5758 17.5029 10.2106L20.7918 6.93756H0.937483C0.419703 6.93756 -1.71661e-05 6.51784 -1.71661e-05 6.00006C-1.71661e-05 5.48228 0.419703 5.06256 0.937483 5.06256Z"
-              fill="#ffffff"
-            />
-          </svg>
-        </button>
-      </section>
-
-      <section class="contact">
-        <div class="row-center">
-          <div class="contact-box">
-            <h2 class="form-heading text-center">Contact Us</h2>
-            <p class="form-head-text text-center">
-              Let us handle your project, professionally.
-            </p>
-            <form action="" method="post">
-              <div class="form-group">
-                <input
-                  type="email"
-                  name=""
-                  id=""
-                  placeholder="Your email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  name=""
-                  id=""
-                  placeholder="Your name / company's name"
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  name=""
-                  placeholder="Your message"
-                  id=""
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-lg btn-contact">
-                Submit
-              </button>
-              <div class="clear"></div>
-            </form>
-          </div>
-        </div>
-      </section>
     </div>
-    <footer>
-      <div class="container">
-        <div class="row footer-row">
-          <div class="col-lg-5 col-md-5 col-sm-12">
-            <img
-              style="width: 4em; height: 1em;"
-              src="./img/Logo.png"
-              class="footer-logo"
-              alt=""
-            />
-            <p class="footer-text">
-              A leading firm, with utmost specialty in providing your business
-              with the best and most effective of prospects and schemes to make
-              it grow even beyond your imagination.
-            </p>
-          </div>
-          <div class="col-lg-2 col-md-2"></div>
-          <div class="col-lg-5 col-md-5 col-sm-12">
-            <div class="row-me">
-              <div class="col-md-6 col-sm-3">
-                <h3 class="social-head">
-                  Company
-                </h3>
-                <ul class="footer-nav">
-                  <li>
-                    <a href="">About us</a>
-                  </li>
-                  <li>
-                    <a href="">Our Services</a>
-                  </li>
-                  <li>
-                    <a href="">Blog</a>
-                  </li>
-                  <li>
-                    <a href="">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-sm-2">
-                <h3 class="social-head">
-                  Socials
-                </h3>
-                <ul class="footer-nav">
-                  <li>
-                    <a href="">
-                      Facebook
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Twitter
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Email
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      +2348181400105
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <p class="footer-copy-add" style="text-align: center;">
-              Copyright &copy; 2020. HOTAB Solutions. All rights reserved.
-            </p>
-          </div>
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <p class="footer-copy-add" style="text-align: center;">
-              9, Ugochukwu Duru Street, Lekki, Lagos.
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    
+  </nav>
+  <!--/.Navbar -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+
+
+  <!-- progress bar -->
+<div class="progress-container">
+  <div class="progress-bar" id="myBar"></div>
+</div>
+ <!-- progress bar -->
+
+
+
+
+
+
+<br><br><br><br>
+
+
+
+  <!-- the intro blog post -->
+  <div class="container">
+           <div class="post">
+               
+            <img src="./assest/img/blogimg.png" class="img-fluid blog" alt="" srcset="">
+            <div class="p-3">
+                <h4 class="heading">Importance of branding to business</h4>
+                <p class="grey-text dear">At an extremely flexible workstate, we would guide you with online trainings that are certain to bring in jawdroppping turnovers while making sure that your business is not left out in the giobal village Dynamics.</p>
+            </div>
+          
+           </div>
+                
+
+            </div>
+  
+  <!-- the intro blog post -->
+
+  
+
+
+
+
+  <!-- blog section -->
+<div class="colo" >
+    <div class="container mt-5">
+      <div class="text-center" data-aos="zoom-in">
+        <h2 class="font-weight-bold">Blog</h2>
+        <p class="gray-text ttt">Recent Articles from our blog</p>
+      </div>
+    
+    
+        <!-- grid row -->
+        <div class="row">
+              <!-- grid column -->
+                  <div class="col-md-4 mb-4 text-center" data-aos="fade-down">
+                        <img src="./assest/img/bgee (2).png" class="img-fluid ime z-depth-1" alt="" srcset="">
+                        <h5 class="font-weight-bold mt-3 intore">Importance of branding to business</h5>
+                        <p class="whatd">Businesses can be for profit or they can be organisations that operate to fufil a charity mission or further a social cause</p>
+                        <a href="http://" class="font-weight-bold weye">Read more</a><i class="fa fa-arrow-circle-right blue-text"></i>
+                  </div>
+              <!-- grid column -->
+    
+               <!-- grid column -->
+               <div class="col-md-4 mb-4 text-center" data-aos="fade-up">
+                <img src="./assest/img/bgee (3).png" class="img-fluid ime z-depth-1" alt="" srcset="">
+                <h6 class="font-weight-bold mt-3 intore">Concept of business Consultancy</h6>
+                        <p class="whatd">Businesses can be for profit or they can be organisations that operate to fufil a charity mission or further a social cause</p>
+                        <a href="http://" class="font-weight-bold weye">Read more</a><i class="fa fa-arrow-circle-right blue-text"></i>
+                </div>
+            <!-- grid column -->
+    
+                     <!-- grid column -->
+                  <div class="col-md-4 text-center" data-aos="fade-down">
+                    <img src="./assest/img/bgee (4).png" class="img-fluid ime z-depth-1" alt="" srcset="">
+                    <h5 class="font-weight-bold mt-3 intore">Marketing as a profit catalyst</h5>
+                        <p class="whatd">Businesses can be for profit or they can be organisations that operate to fufil a charity mission or further a social cause</p>
+                        <a href="http://" class="font-weight-bold weye">Read more</a><i class="fa fa-arrow-circle-right blue-text"></i>
+    
+                    </div>
+                <!-- grid column -->
+        </div>
+        <!-- grid row -->
+    
+    
+        <div class="text-center mt-3" >
+          <!-- <a href="http://" class="btn btn-primary weye">View all<i class="fa white-text fa-arrow-circle-right blue-text"></i></a> -->
+          <button class="btn btn-primary font-weight-bold">View all<i class="fa white-text fa-arrow-circle-right blue-text"></i></button>
+        </div>
+        </div> 
+    </div>
+    <!-- blog section -->
+
+
+
+
+
+
+
+
+
+
+    <!-- contact us section -->
+  <div class="container" data-aos="fade">
+    <div class="contain mt-5">
+        <h3 class="text-center wey">Contact Us</h3>
+        <p class="text-center griy font-weight-bold">Let us handle your project, professionally</p>
+        <form action="" class="">
+          <div class="form-group">
+            <label class="sr-only">Email</label>
+            <input type="text" class="form-control" placeholder="Your email address">
+        </div>
+          <div class="form-group">
+              <label class="sr-only">Name</label>
+              <input type="text" class="form-control" placeholder="Your name / company's name">
+          </div>
+          <div class="form-group">
+            <label class="sr-only">message</label>
+              <textarea name="" placeholder="Your message" id="" class="form-control" cols="30" rows="10"></textarea>
+           </div>
+        </form>
+      <p class="text-right"><a href="" class="btn btn-primary">SUBMIT</a></p>
+      </div>
+    </div>
+     
+    <!-- contact us section -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+<footer class="page-footer font-small whit z-depth-5 mt-5" data-aos="fade">
+    <div class="container">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-md-6 col-sm-4 mx-auto">
+    
+            <!-- Links -->
+            <!-- <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5> -->
+            <div class="mt-1">
+              <img src="./assest/img/logo2.png" style="width: 10em;"  alt=""><span class="">
+              <p class="mt-2 black-text">A leading firm, with utmost specialty in providing your business with the best and most effective of prospects and schemes to make it grow even beyond your imagination.</p>
+            </div>
+           
+            
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 col-sm-4 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-2 black-text">COMPANY</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="black-text">About Us</a>
+              </li>
+              <li>
+                <a href="#!" class="black-text">Our Service</a>
+              </li>
+              <li>
+                <a href="#!" class="black-text">Blog</a>
+              </li>
+              <li>
+                <a href="#!" class="black-text">Contact Us</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 col-sm-4 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-2 black-text">SOCIALS</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="black-text"><img src="./assest/img/Path.png" alt="" srcset=""> Facebook</a>
+              </li>
+              <li>
+                <a href="#!" class="black-text"><img src="./assest/img/twitter.png" alt="" srcset=""> Twitter</a>
+              </li>
+              <li>
+                <a href="#!" class="black-text"><img src="./assest/img/email.png" alt="" srcset=""> Email</a>
+              </li>
+              <li>
+                <a href="#!" class="black-text"><img src="./assest/img/call.png" alt="" srcset="">  +2348181400105</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+      </div>
+      <!-- Footer Links -->
+    
+      <!-- Copyright -->
+    
+    
+    
+      
+      <div class=" py-3 white z-depth-5 cola">
+        <!-- row -->
+        <div class="row">
+          <!-- grid column -->
+          <div class="col-md-6 text-center">
+            
+            <span class="black-text">Copyright © 2020 <a class="black-text" href="https://mdbootstrap.com/">HOTAB Solutions. All rights reserved</a></span>
+          </div>
+          <!-- grid column -->
+    
+          <!-- grid column -->
+          <div class="col-md-6 text-center">
+            <span class="black-text">9, Ugochukwu duku street Lekki Lagos</span> 
+          </div>
+          <!-- grid column -->
+    
+    </div>
+     <!-- row -->
+    </div>
+      <!-- Copyright -->
+    </div>
+    <!-- contaier -->
+    </footer>
+    <!-- Footer -->
+
+  
+  
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="./assest/js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="./assest/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="./assest/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="./assest/js/mdb.min.js"></script>
+  <script src="./assest/js/scripts.js"></script>
+  <!-- <script src="js/top.js"></script> -->
+</body>
+
 </html>

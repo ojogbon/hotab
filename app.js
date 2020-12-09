@@ -14,6 +14,7 @@ const blogRoute = require("./route/blogRoute");
 const aboutUsRoute = require("./route/aboutUsRoute");
 const commentRoute = require("./route/commentRoute");
 const adminRoute = require("./route/adminRoute");
+const contactUsRoute = require("./route/contactUsRoute");
 
 dotenv.config({ path: "./config.env" });
 
@@ -65,10 +66,30 @@ app.use(
 app.get("/", (req, res) => {
   res.render("index");
 });
+app.get("/aboutus.html", (req, res) => {
+  res.render("aboutus");
+});
+
+app.get("/blog.html", (req, res) => {
+  res.render("blog");
+});
+
+app.get("/services.html", (req, res) => {
+  res.render("services");
+});
+app.get("/contactus.html", (req, res) => {
+  res.render("contactus");
+});
+
+app.get("/product.html", (req, res) => {
+  res.render("product");
+});
+
 app.use(adminRoute);
 app.use(serviceRoute);
 app.use(blogRoute);
 app.use(aboutUsRoute);
+app.use(contactUsRoute);
 app.use("/api/v1", staffroutes);
 app.use("/api/v1", productRoute);
 app.use("/api/v1", userRoute);
@@ -77,7 +98,7 @@ app.use("/api/v1", licenseRoute);
 app.use("/api/v1", commentRoute);
 
 mongoose
-  .connect("mongodb://localhost:27017/hotlab", { useNewUrlParser: true })
+  .connect("mongodb://127.0.0.1:27017/hotlab", { useNewUrlParser: true })
   .then(() => {
     console.log("Database connection successfull");
   });
