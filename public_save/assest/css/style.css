@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* the landing page style */
+html,
+body,
+header
+ {
+    height: 100%;
+    
+}
+
+#intro {
+    height: 100%;
+    background: url("../img/bgImage.png")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* the company worked for logos */
+.raw::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column{
+    width: 16.6%;
+    float: left;
+}
+
+/* the get intouch button */
+.bottn{
+  border: 3px solid white;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* the index page blog images border  */
+.ime{
+  border-radius: 12px;
+}
+
+
+
+/* thee contact form */
+.contain{
+  /* margin-left: 20em;
+  margin-right: 20em; */
+  width: 550px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* the contact form  */
+
+/* On screens that are 992px or less, set the background color to blue */
+/* @media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+} */
+.why{
+  background-color: white;
+}
+/* blog */
+.colo{
+  background: #F7FAFD !important;
+  /* border: 3px solid white; */
+}
+
+
+/* about us */
+.coli{
+  background: #f2f2f2 !important;
+
+}
+/* footer*/
+.cola{
+  /* background: 	 #d9d9d9 !important; */
+  border: 5px solid white;
+}
+
+/* let us handle your projec/t */
+.griy{
+  color:  #787676;
+
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+}
+
+/* read article from our blog */
+.ttt{
+  /* font-family: Rubik; */
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+}
+
+/* home background */
+.what{
+  background: #f2f2f2;
+}
+
+/* what we offer */
+
+.whatd{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* intro paragraph */
+
+.whatde{
+  font-weight: 400;
+  font-size: 24px;
+}
+
+/* our services*/
+
+.whatder{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* footer */
+footer{
+  background: white;
+  border: 5px solid white;
+}
+
+/* intro heading */
+.intor{
+  font-weight: 500;
+  font-size: 40px;
+}
+
+/* intro heading */
+.intore{
+  font-weight: 500;
+  font-size: 22px;
+}
+
+/* top companies we work with */
+.wey{
+  font-weight: 500;
+  font-size: 30px;
+
+}
+
+/* links */
+.weye{
+  /* font-weight: 700; */
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+
+/* OUR SERVICES */
+
+/* the landing page style */
+.htmle,
+.bodye
+{
+    height: 100%;
+}
+
+/* our services intro landing page */
+#introservice {
+    position: relative;
+    height: 60%;
+    background: url("../img/BG\ Image.png")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  
+/* our services intro image */
+.serv{
+  font-weight: 500;
+  font-size: 40px;
+}
+
+/* our services intro image */
+.rower{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+/*our servies paragraph*/
+
+.dear{
+  font-weight: 400;
+  font-size: 22px;
+ 
+}
+
+
+/* our services service headings */
+.heading{
+    font-size: 33px;
+    font-weight: 500;
+}
+
+/* OUR SERVICE*/
+
+li a:hover {
+    background-color: black;
+    color: white !important;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 90px;
+  background:white !important;
+  position: fixed;
+  top: 0.2em;
+  z-index: 10;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 90px;
+  background: black;
+  width: 0%;
+}
+
+/* the back to top button */
+.topbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: blue;
+  bottom: 10px;
+  right: 10px;
+  z-index: 23;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white !important;
+  font-size: 30px;
+  display: none;
+  
+}
+
+.topbtn:hover{
+  background: #000066;
+  color: 	 white !important;
+}
+
+
+/* scroll behavior */
+html{
+  scroll-behavior: smooth;
+}
